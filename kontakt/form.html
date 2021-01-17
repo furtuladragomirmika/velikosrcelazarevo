@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Starbuzz Bean Machine</title>
+	<link rel="stylesheet" href="starbuzz.css">
+	<link rel="stylesheet" href="styledform.css">
+  </head>
+  <body>
+  
+    <h1>Starbuzz Bean Machine</h1>
+	<h2>Popunite sledeću formu i pritisnite tipku "Zakaži danas", da bi formirali porudžbu.</h2>
+		 
+    <form action="http://www.starbuzzcoffee.com/processorder.php" method="post">
+	<div class="tableRow">
+  	   <p>
+	    Odaberite kafu:
+		</p>
+		</p>
+		<select name="beanes">
+		  <option value="Smeša kafa">Smeša domaćih kafa</option>
+		  <option value="Bolivija">Bolivija</option>
+		  <option value="Gvatemala">Gvatemala</option>
+		  <option value="Kenija">Kenija</option>
+		</select>
+	   </p>
+	 </div>
+	<div class="tableRow">
+		<p> Tip: </p>
+		<p>
+            <input type="radio" name="beantype" value="whole"> U zrnu<br>
+            <input type="radio" name="beantype" value="ground" checked> 
+            Mlevena
+		</p>
+	  <div class="tableRow">
+		<p> Broj paketa: </p>
+		<p> <input type="number" name="bags" min="1" max="10"> </p>
+	</div>
+	<div class="tableRow label">
+		<p> Kada isporuciti: </p>
+		<p> <input type="date" name="date"> </p>
+	</div>
+	<div class="tableRow">
+		<p> Dodatne usluge: </p>
+		<p>
+            <input type="checkbox" name="extras[]" value="giftwrap"> Porodicno pakovanje<br>
+            <input type="checkbox" name="extras[]" value="catalog" checked>
+            Isporuka kataloga
+		</p>
+	</div>
+	<div class="tableRow">
+	     <p clas="heading">Dostavi na adresu :</p>
+	     <p></p>
+	 </div>
+	<div class="tableRow">
+		<p> Ime: </p>
+		<p> <input type="text" name="name" value="" placeholder="Furtula Petkov Dragomir" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> Adresa: </p>
+		<p> <input type="text" name="address" value="" placeholder="Danila Djokica 76" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> Grad: </p>
+		<p> <input type="text" name="city" value="" placeholder="Lazarevo" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> Drzava: </p>
+		<p> <input type="text" name="state" value="" placeholder="Srbija" required> </p>
+	</div>
+	 <div class="tableRow">
+		<p> ZIP: </p>
+		<p> <input type="text" name="zip" value="" placeholder="23241" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> Telefon: </p>
+		<p> <input type="tel" name="phone" value="" placeholder="023 896-045" required> </p>
+	</div>
+	 <div class="tableRow">
+		<p> Vas komentar: </p>
+		<p>
+            <textarea name="comments"></textarea>
+		</p>
+	</div>
+	 
+	 <div class="tableRow">
+		<p></p>
+		<p> <input type="submit" value="Porucite"> </p>
+	</div>
+ </form>
+ <br>
+ <p align="right">Drugi nacin forme izgled</p>
+	
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </form>
+ 
+	
+  </body>
+</html>
+  
